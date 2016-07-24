@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--New Dish-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="T_O_L_E_N" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,12 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Dish" id="deI-hb-6XA">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hWo-v1-zWO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="T4v-KT-TYW"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="633"/>
+            <point key="canvasLocation" x="2101" y="464"/>
         </scene>
-        <!--Meal Table View Controller-->
+        <!--Menu-->
         <scene sceneID="aC3-Ii-g08">
             <objects>
                 <tableViewController id="WWQ-ju-eaF" customClass="MealTableViewController" customModule="T_O_L_E_N" customModuleProvider="target" sceneMemberID="viewController">
@@ -58,6 +62,7 @@
                                     <outlet property="nameLabel" destination="DJt-YE-VbY" id="Pt4-mY-Y49"/>
                                     <outlet property="photoImageView" destination="qDe-A6-BRH" id="k3i-83-ve2"/>
                                     <outlet property="ratingControl" destination="MLa-EG-2hu" id="WUt-8J-b6p"/>
+                                    <segue destination="xXb-5G-ybh" kind="show" identifier="ShowVideo" id="AFx-wS-JMn"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -66,7 +71,13 @@
                             <outlet property="delegate" destination="WWQ-ju-eaF" id="tPS-N5-2Et"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="mW0-hW-mrv"/>
+                    <navigationItem key="navigationItem" title="Menu" id="mW0-hW-mrv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="UNJ-ja-byy">
+                            <connections>
+                                <segue destination="x0U-yE-7If" kind="show" id="NTA-fh-E3E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFP-Jz-q5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +100,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcg-Eb-DCz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-276" y="464"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K6a-C4-JEQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x0U-yE-7If" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5YI-Jh-npf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ujk-Kq-bX4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wou-Pq-E8a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1289" y="464"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kmg-kv-Uo7">
+            <objects>
+                <viewController id="xXb-5G-ybh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bN-R9-pJ2"/>
+                        <viewControllerLayoutGuide type="bottom" id="WsH-dG-fhw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wX6-ZQ-Lgr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2d2-8v-iQF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="536" y="1206"/>
         </scene>
     </scenes>
     <resources>
