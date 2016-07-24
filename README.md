@@ -32,6 +32,8 @@ Our target market is everyone! In particular people who like to know what they e
     2. You want to know everything about the place and what dishes and environment you’re expecting. You want this date to be perfect.
     3. Open up VR Yelp and bam you’re virtually at the restaurant and now you know what you will be expecting!
 
+<h2>Business Model</h2>
+Our primary revenue stream will be advertising package subscriptions to companies that list their businesses on Tolen. Also sponsored search where local businesses pay Tolen for traffic to their website. Sponsored search will allow businesses to move their links to first Search Engine Results page (SERP).
 
 <h2>Team</h2>
 Marika Lee (Software engineer) <br>
