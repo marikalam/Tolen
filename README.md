@@ -9,7 +9,9 @@ See the dishes. <br>
 Know what to expect.</h1>
 
 <h2>Vision</h2>
-You look up a new restaurant on Yelp but wonder what kind of dishes and what the environment and the ambience is like in the restaurant. But unfortunately the pictures won’t do because you don’t know the actual size and the pictures of the restaurant are only partial areas of the place. 
+You look up a new restaurant on Yelp but wonder what kind of dishes and what the environment and the ambience is like in the restaurant. But unfortunately the pictures won’t do because you don’t know the actual size and the pictures of the restaurant are only partial areas of the place. <br>
+Our pitch deck can be seen [here.](http://www.slideshare.net/MarikaLee1/tolen-pitch-deck)
+
 
 <h2>Solution</h2>
 Our solution is to create basically a Virtual Reality Yelp along with the environement view and the menu's associated with their dishes. <br>
@@ -46,3 +48,4 @@ jeff.zhang223@gmail.com <br>
 
 Danny Lam (3D model artist) <br>
 dann.lam@gmail.com
+
